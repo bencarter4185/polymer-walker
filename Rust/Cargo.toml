@@ -1,0 +1,16 @@
+[package]
+name = "walker"
+version = "0.1.0"
+edition = "2018"
+
+[lib]
+name = "walker_rust"
+crate-type = ["cdylib"]
+
+[dependencies.pyo3]
+version = "0.14.5"
+features = ["extension-module"]
+
+[dependencies]
+rayon = "1.5.1" # Parallelisation
+itertools = "0.10.1" # Itertools, similar to in python
